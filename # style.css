@@ -44,3 +44,63 @@ nav a{
     font-weight: 500;
     opacity: 0.8s;
 }
+
+nav a:hover,
+nav a.active{   
+    opacity: 1;
+    font-weight: bold;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.hero{
+    background: linear-gradient(), url();
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+}
+
+.hero h1,
+.hero-page h1{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;/*16px* = 1 rem /
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-content, signup-section{
+width: 800px;
+margin: 0 auto;
+padding: 2rem;
+animation: fadeinUp 1s ease-in-out;
+}
+
+.cta-button{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+form fieldset{
+    border:1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+form legend{
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+    
+    
