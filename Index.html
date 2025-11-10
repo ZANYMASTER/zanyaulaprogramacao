@@ -3,66 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organização Voluntariado</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Pequeno estilo para o menu (opcional) */
-        .menu-toggle { font-size: 1.2rem; }
-        #navMenu { list-style: none; padding: 0; margin: 0; display: flex; gap: 1rem; }
-        #navMenu.open { display: flex; }
-        @media (max-width: 600px) {
-            #navMenu { display: none; flex-direction: column; }
-            #navMenu.open { display: flex; }
-        }
-        .logo { font-size: 1.1rem; }
-        .active { font-weight: bold; }
-    </style>
+    <title>Organização de Voluntários - Início</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- header -->
+    <!-- Header -->
     <header>
-        <h1>Como é a nossa organização</h1>
         <nav>
-            <div class="logo" aria-hidden="true">&#128153; Voluntários</div>
-            <button class="menu-toggle" onclick="toggleMenu()" aria-expanded="false" aria-controls="navMenu">☰</button>
+            <div class="logo">&#128153; Voluntários</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
             <ul id="navMenu">
-                <li><a href="Index.html" class="active">Início</a></li>
+                <li><a href="index.html" class="active">Início</a></li>
                 <li><a href="projeto.html">Projetos</a></li>
-                <li><a href="cadastro.html">Seja voluntário</a></li>
+                <li><a href="cadastro.html">Seja Voluntário</a></li>
+
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Quem somos</h2>
-            <p>Somos uma organização sem fins lucrativos que atua em atendimentos a famílias de baixa renda.</p>
-            <img src="volun.jpg" alt="Voluntários em ação">
-        </section>
-
-        <!-- Contact Section -->
-        <section>
-            <h3>Fale conosco</h3>
-            <address>
-                <p>Endereço: Rua das Hortências, 123, Alto do Boa Vista - Campos do Jordão</p>
-                <p>Telefone: (12) 99999-9000</p>
-                <p>Email: <a href="mailto:contato@voluntario.org.br">contato@voluntario.org.br</a></p>
-            </address>
-        </section>
-    </main>
-
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transforme Vidas sendo Voluntário</h1>
+            <p>Somos uma organização dedicada à inclusão social e ao atendimento de famílias. Junte-se a nós e faça a diferença!</p>
+            <a href="cadastro.html" class="btn-primary">Seja Voluntário</a>
+            </div>
+    </section> 
+    <!-- Quem Somos -->
+    <section class="about">
+        <h2>Institucional</h2>
+        <p>Somos uma organização sem fins lucrativos que atua no atendimento de famílias em inclusão social, promovendo dignidade, esperança e oportunidades para quem mais precisa.</p>
+        
+    </section>  
+ 
     <footer>
-        <p>&copy; 2025 Organização Voluntariado. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Organização de Voluntários. Todos os direitos reservados.</p>
+     <p>Feito com &#10084;&#65039; para transformar vidas</p>
     </footer>
 
-    <script>
-        // Função simples para alternar menu em telas pequenas
-        function toggleMenu() {
-            const menu = document.getElementById('navMenu');
-            const btn = document.querySelector('.menu-toggle');
-            const isOpen = menu.classList.toggle('open');
-            btn.setAttribute('aria-expanded', String(isOpen));
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
